@@ -20,6 +20,6 @@ Per eseguire i testbench è necessario seguire i seguenti step:
 
 Ad esempio, per eseguire il testbench relativo al file mixcolumn.v è necessario lanciare i seguenti comandi:
 
-.\iverilog -o mixcolumn_tb mixcolumn_tb.v mixcolumn.v\
-
+.\iverilog -o mixcolumn_tb mixcolumn_tb.v mixcolumn.v
+\
 .\vvp mixcolumn_tb

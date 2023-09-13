@@ -13,13 +13,13 @@ https://bleyer.org/icarus/
 
 Per eseguire i testbench è necessario seguire i seguenti step:
 1) Aprire il terminale e recarsi nel path in cui si trova il compilatore e i vari codici sorgente (file con estensione .v): "C:\iverilog\bin"
-2) Eseguire il seguente comando per produrre il file ogetto:
+2) Eseguire il seguente comando per produrre il file ogetto:\
    .\iverilog -o <nome_file_output> <nome_file.v>
-4) Per eseguire il file lanciare il comando:
+4) Per eseguire il file lanciare il comando:\
    .\vvp <nome_file_output>
 
 Ad esempio, per eseguire il testbench relativo al file mixcolumn.v è necessario lanciare i seguenti comandi:
 
-.\iverilog -o mixcolumn_tb mixcolumn_tb.v mixcolumn.v
+.\iverilog -o mixcolumn_tb mixcolumn_tb.v mixcolumn.v\
 
 .\vvp mixcolumn_tb

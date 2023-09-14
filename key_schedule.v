@@ -27,7 +27,8 @@ module aes_128_key_schedule(key, sk0, sk1, sk2, sk3, sk4, sk5, sk6, sk7, sk8, sk
     assign w3 =  key[031:000];
 
     g_function g1(w3, subword1);
-    // Lo XOR con rcon deve essere fatto solo con gli 8 bit più a sinistra della subword (aggiungiamo 24 bit a 0 a destra)
+    // Lo XOR con rcon deve essere fatto solo con gli 8 bit più a sinistra della subword:
+    // aggiungiamo 24 bit a 0 a destra della costante rcon così lo XOR fa passare inalterati i rispettivi 24 bit della subword
     assign w4 = w0 ^ (subword1 ^ {rcon1, 24'b0});
     assign w5 = w1 ^ w4;
     assign w6 = w2 ^ w5;

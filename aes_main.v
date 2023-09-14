@@ -9,7 +9,7 @@ module aes_main(data_in,key,data_out);
     assign r_data_out = data_in ^ key_s;
 
 
-    aes_key_expand_128 a0(key,key_s,key_s0,key_s1,key_s2,key_s3,key_s4,key_s5,key_s6,key_s7,key_s8,key_s9);
+    aes_128_key_schedule ks(key,key_s,key_s0,key_s1,key_s2,key_s3,key_s4,key_s5,key_s6,key_s7,key_s8,key_s9);
     round r0(r_data_out,key_s0,r0_data_out);
     round r1(r0_data_out,key_s1,r1_data_out);
     round r2(r1_data_out,key_s2,r2_data_out);

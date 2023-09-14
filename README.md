@@ -25,6 +25,7 @@ Ad esempio, per eseguire il testbench relativo al file mixcolumn.v è necessario
 .\vvp mixcolumn_tb
 
 Per testare il modulo principale aes_main (per verificare che il ciphertext generato sia corretto) lanciare i seguenti comandi:
+
 .\iverilog -o aes_main_tb aes_main_tb.v aes_main.v g_function.v mixcolumn.v round.v last_round.v sbox.v subbytes.v shiftrows.v key_schedule.v
 \
 .\vvp aes_main_tb

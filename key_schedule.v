@@ -90,15 +90,25 @@ module aes_128_key_schedule(key, sk0, sk1, sk2, sk3, sk4, sk5, sk6, sk7, sk8, sk
 
     // Output
     assign sk0={w0,w1,w2,w3};
+    // subkey 1
     assign sk1={w4,w5,w6,w7};
+    // subkey 2
     assign sk2={w8,w9,w10,w11};
+    // subkey 3
     assign sk3={w12,w13,w14,w15};
+    // subkey 4
     assign sk4={w16,w17,w18,w19};
+    // subkey 5
     assign sk5={w20,w21,w22,w23};
+    // subkey 6
     assign sk6={w24,w25,w26,w27};
+    // subkey 7
     assign sk7={w28,w29,w30,w31};
+    // subkey 8
     assign sk8={w32,w33,w34,w35};
+    // subkey 9
     assign sk9={w36,w37,w38,w39};
+    // subkey 10
     assign sk10={w40,w41,w42,w43};
 
 endmodule

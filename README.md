@@ -1,3 +1,5 @@
+# AES-128 encryption Implementation in Verilog
+
 I file sono stati scritti nel seguente ordine:
 - sbox.v
 - subbytes.v
